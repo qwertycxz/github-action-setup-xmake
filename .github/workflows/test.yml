@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - uses: xmake-io/github-action-setup-xmake@master
+      - uses: qwertycxz/github-action-setup-xmake@master
         with:
           xmake-version: ${{ matrix.version }}
           actions-cache-folder: '.xmake-cache'
@@ -37,7 +37,7 @@ jobs:
           xmake run
           xmake clean
 
-      - uses: xmake-io/github-action-setup-xmake@master
+      - uses: qwertycxz/github-action-setup-xmake@master
         with:
           xmake-version: ${{ matrix.version }}
           actions-cache-folder: '${{ runner.temp }}/xmake-cache'
